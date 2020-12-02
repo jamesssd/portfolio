@@ -8,6 +8,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
 
+        <!-- Script for bootstrap modal -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 
         <!-- Update fonts -->
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
@@ -56,8 +61,7 @@
                     <h3>Node.js</h3>
                     <h3>JavaScript</h3>
                 </div>
-            </div> <!-- / skills -->
-            
+            </div> 
             <a href="#project" class="btn">My Projects</a>
         </section>
         
@@ -78,9 +82,27 @@
         </section>
         
         <!-- 30 Seconds Pitch -->
-        <!-- <section class="pitch" id="thirtysecpitch">
-            <h2 class="section__subtitle section__subtitle--30 sec pitch">Thirty Second Pitch</h2> -->
+        <div class="pitch">
+            <!-- Button HTML (to Trigger Modal) -->
+            <a href="#myModal" class="btn btn-primary btn-lg" data-toggle="modal">Click to play video!</a>
             
+            <!-- Modal HTML -->
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">James Dizon</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <video autoplay controls id="pitchVideo" class="embed-responsive-item" width="560" height="315" src="video/pitch.mov" type="video/mp4" allowfullscreen></video>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
 
         <!-- My Project -->
         <section class="my-project" id="project">
@@ -112,10 +134,10 @@
                 <a href="https://github.com/aprilleperez/realgameoflife_client" target="_blank" class="portfolio__item">
                     <img src="img/intheirshoes.jpg" alt="" class="portfolio_img">
                 </a>
-                
+
                 <!-- Portfolio item 06 -->
                 <a href="https://github.com/hunterwiegand/Food-for-Thought" target="_blank" class="portfolio__item">
-                    <img src="img/foodForThought.jpg" alt="" class="portfolio__img">
+                    <img src="img/foodForThought.png" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 7 -->
