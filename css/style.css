@@ -478,3 +478,17 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Modal */
+#resumeName{
+    text-align: center;
+    font-weight: bold;
+}
+
+#resumeHeader{
+    text-align: center;
+}
+
+.modal-title{
+    text-align: center;
+}
