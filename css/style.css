@@ -296,6 +296,26 @@ h3, h4, h5{
     text-decoration: underline;
 }
 
+.bs-example{
+    margin: 20px;
+}
+
+.modal-dialog iframe{
+    margin: auto, auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+button{
+    text-align: center;
+}
+
+#resumeName{
+    text-align: center;
+    font-weight: bold;
+}
+
+
 /*  My Skills Section  */
 
 .my-skills {
@@ -342,14 +362,6 @@ h3, h4, h5{
     .skill + .skill {
         margin-left: 2em;
     }
-}
-
-.bs-example{
-    margin: 20px;
-}
-.modal-dialog iframe{
-    margin: 0 auto;
-    display: block;
 }
 
 .about-me {
@@ -489,16 +501,3 @@ h3, h4, h5{
     margin-right: auto;
 }
 
-/* Modal */
-#resumeName{
-    text-align: center;
-    font-weight: bold;
-}
-
-#resumeHeader{
-    text-align: center;
-}
-
-.modal-title{
-    text-align: center;
-}
